@@ -65,12 +65,20 @@ nav a:last-child{ /* prevents extra padding after last link */
   display: block;
   width: 60%;
   height: 100%;
-  padding-right: 24px;
+  padding-right: 64px;
 }
 
 .banner-text{
   display: block;
   width: 30%;
+}
+
+.banner-text h1{
+  margin-bottom: 24px;
+}
+
+.banner-text h4{
+  margin-bottom: 24px;
 }
 
 /* INFORMATION SPOTLIGHT */
