@@ -51,8 +51,8 @@ nav a:last-child{ /* prevents extra padding after last link */
 
 /* BANNER */
 #banner{
-  width: 100% - 48px;
-  padding: 32px 24px;
+  width: 100% - 24px; /* prevent horizontal scrolling */
+  padding: 32px 0 32px 24px;
   display: flex;
   align-items: center;
   background-color: lightgray;
@@ -68,4 +68,72 @@ nav a:last-child{ /* prevents extra padding after last link */
 .banner-text{
   display: block;
   width: 30%;
+}
+
+/* INFORMATION SPOTLIGHT */
+#information-spotlight{
+  display: flex;
+  width: 100% - 24px; /* prevent horizontal scrolling */
+  padding-left: 24px;
+}
+
+.main-spotlight{
+  width: 60%;
+  padding-right: 24px;
+  padding-top: 32px;
+  border-right: 1px solid #ccc;
+}
+
+.main-spotlight-img{
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.main-spotlight h2{
+  margin-bottom: 24px;
+}
+
+.main-spotlight p1{
+  display: block;
+}
+
+.quote-author{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.spotlight-aside{
+  width: 40%;
+  padding-top: 32px;
+}
+
+.aside-info-item{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 16px;
+}
+
+.aside-info-item:last-child{
+  border-bottom: 1px solid #ccc;
+}
+
+.aside-info-item img{
+  width: 35%;
+  height: 100%;
+  margin-right: 16px;
+}
+
+.aside-info-item .text{
+  width: 65%;
+}
+
+.aside-info-item .text h3{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.aside-info-item .text p1{
+  display: block;
+  margin-bottom: 8px;
 }
