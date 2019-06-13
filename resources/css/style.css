@@ -137,3 +137,33 @@ nav a:last-child{ /* prevents extra padding after last link */
   display: block;
   margin-bottom: 8px;
 }
+
+
+/* COURSES SPOTLIGHT */
+#courses{
+  width: 100% - 144px; /* no horizontal scroll */
+  background-color: #efefef;
+  padding: 32px 72px;
+}
+
+#courses h2{
+  margin-bottom: 32px;
+}
+
+.courses-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.course-item{
+  width: 32%;
+  background-color: #fff;
+  margin-bottom: 32px;
+}
+
+.course-item img{
+  width: 100%;
+  height: auto;
+}
