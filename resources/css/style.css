@@ -19,14 +19,22 @@ h1, h2, h3{
   font-weight: normal;
 }
 
+h1{
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
 h4, p1{
   font-family: 'Lato', sans-serif;
   font-weight: normal;
 }
 
-h1{
-  font-size: 2.5rem;
-  line-height: 1.2;
+.bold{
+  font-weight: bold;
+}
+
+.accent-color{
+  color: #FFA500;
 }
 
 /* HEADER */
@@ -37,8 +45,9 @@ header{
   justify-content: space-between; /* emulates float-left and float-right for logo and nav */
   position: sticky;
   top: 0;
-  background-color: #fff;
-  border-bottom: 2px solid #ccc;
+  background-color: rgba(55, 75, 103, 0.97);
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
   padding: 0 24px;
 }
 
@@ -65,13 +74,14 @@ nav{
 nav a{
   display: flex;
   align-items: center;
-  padding-right: 16px;
+  padding: 0 16px;
   text-decoration: none;
-  color: #333;
+  color: inherit;
+  transition: background-color .3s ease-out;
 }
 
-nav a:last-child{ /* prevents extra padding after last link */
-  padding-right: 0;
+nav a:HOVER{
+  background-color: rgba(255, 165, 0, 0.5);
 }
 
 /* BANNER */
@@ -79,7 +89,8 @@ nav a:last-child{ /* prevents extra padding after last link */
   padding: 32px 0 32px 24px;
   display: flex;
   align-items: center;
-  background-color: #D1E2F2;
+  background-color: #526F99;
+  color: #fff;
 }
 
 .banner-img{
@@ -105,8 +116,20 @@ nav a:last-child{ /* prevents extra padding after last link */
 .banner-text button{
   padding: 8px 0;
   width: 80%;
-  background-color: #333;
-  border: 0;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  background-color: rgba(255, 165, 0, 0.8);
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
+.banner-text button:ACTIVE{
+  border: 2px outset darkorange;
+}
+
+.banner-text button:FOCUS{
+  outline: 0;
 }
 
 /* INFORMATION SPOTLIGHT */
