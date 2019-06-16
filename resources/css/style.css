@@ -96,6 +96,12 @@ nav a:HOVER{
   background-color: rgba(255, 165, 0, 0.5);
 }
 
+@media only screen and (max-width: 900px){
+  header{
+    display: none;
+  }
+}
+
 /* BANNER */
 #banner{
   padding: 32px 0 32px 24px;
@@ -146,6 +152,40 @@ nav a:HOVER{
 
 .banner-text button:FOCUS{
   outline: 0;
+}
+
+@media only screen and (max-width: 900px){
+  #banner{
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .banner-img{
+    width: 100%;
+    border: 0;
+    margin: 0;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .banner-text{
+    width: calc(100% - 32px); /* no horizotal scroll */
+    padding: 32px 16px;
+  }
+
+  .banner-text button{
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .banner-text h1{
+    margin-bottom: 32px;
+  }
+
+  .banner-text h4{
+    margin-bottom: 24px;
+  }
 }
 
 /* INFORMATION SPOTLIGHT */
