@@ -21,8 +21,8 @@ Description: Capstone project for Codecademy Pro Intensive | Build Websites from
 </head>
 
 <body>
-  <!-- header contains logo & navigation -->
-  <header>
+  <!-- DESKTOP header contains logo & navigation -->
+  <header class="hide-mobile">
     <div class="logo">
       <img class="logo-img" alt="Colmar Academy" src="./resources/images/ic-logo.svg">
       <div class="logo-text"><span class="bold accent-color">COLMAR</span>ACADEMY</div>
@@ -32,6 +32,16 @@ Description: Capstone project for Codecademy Pro Intensive | Build Websites from
       <a href="index.html#courses">Online</a>
       <a href="index.html#thesis">For companies</a>
       <a href="#">Sign in</a>
+    </nav>
+  </header>
+
+  <!-- MOBILE header -->
+  <header class="show-mobile">
+    <nav>
+      <a href="index.html#information"><img src="./resources/images/ic-logo.svg"></a>
+      <a href="index.html#thesis"><img src="./resources/images/ic-on-campus.svg"></a>
+      <a href="index.html#courses"><img src="./resources/images/ic-online.svg"></a>
+      <a href="#"><img src="./resources/images/ic-login.svg"></a>
     </nav>
   </header>
 
@@ -163,13 +173,13 @@ Description: Capstone project for Codecademy Pro Intensive | Build Websites from
           <!-- spotlight thesis -->
           <div class="spotlight-thesis">
             <video controls src="./resources/videos/thesis.mp4">Sorry, video isn't supported.</video>
-            <div class="spotlight-thesis-text">
+            <div class="spotlight-thesis-text hide-mobile">
               <h3>Reimagine urban</h3>
               <p1>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</p1>
             </div>
           </div>
           <!-- other theses -->
-          <div class="aside-theses">
+          <div class="aside-theses hide-mobile">
             <!-- fisma thesis -->
             <div class="thesis-item highlight">
               <img alt="Student drawing design plans" src="./resources/images/thesis-fisma.jpg">
@@ -195,7 +205,7 @@ Description: Capstone project for Codecademy Pro Intensive | Build Websites from
       <div class="footer-copyright">
         <h4>&copy; 2019 Colmar Academy. All rights reserved</h4>
       </div>
-      <div class="footer-links">
+      <div class="footer-links hide-mobile">
         <h4>Terms &nbsp; &nbsp; Privacy</h4>
       </div>
     </footer>
