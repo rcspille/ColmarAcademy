@@ -14,9 +14,17 @@ html{
   background-color: #efefef;
 }
 
+.show-mobile{
+  display: none;
+}
+
 @media only screen and (max-width: 900px){
   .hide-mobile{
     display: none !important;
+  }
+
+  .show-mobile{
+    display: flex;
   }
 }
 
@@ -103,8 +111,9 @@ nav a:HOVER{
 }
 
 @media only screen and (max-width: 900px){
-  header{
-    display: none;
+  nav{
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -436,6 +445,16 @@ nav a:HOVER{
   width: 65%;
 }
 
+@media only screen and (max-width: 900px){
+  #thesis{
+    padding: 32px 0 24px 0;
+  }
+
+  .spotlight-thesis{
+    width: 100%;
+  }
+}
+
 /* FOOTER */
 footer{
   display: flex;
@@ -445,4 +464,10 @@ footer{
   background-color: #526F99;
   font-size: .6rem;
   color: #fff;
+}
+
+@media only screen and (max-width: 900px){
+  footer{
+    font-size: 1rem;
+  }
 }
