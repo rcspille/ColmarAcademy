@@ -14,6 +14,12 @@ html{
   background-color: #efefef;
 }
 
+@media only screen and (max-width: 900px){
+  .hide-mobile{
+    display: none !important;
+  }
+}
+
 /* FONTS */
 h1, h2, h3{
   font-family: 'Oswald', sans-serif;
@@ -157,7 +163,7 @@ nav a:HOVER{
 @media only screen and (max-width: 900px){
   #banner{
     padding: 0;
-    margin: 0;
+    margin: 0 0 16px 0;
     flex-direction: column;
   }
 
@@ -271,6 +277,32 @@ nav a:HOVER{
   margin-bottom: 8px;
 }
 
+@media only screen and (max-width: 900px){
+  #information-spotlight{
+    width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+
+  .spotlight-aside{
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .aside-info-item .text{
+    width: 100%;
+  }
+
+  .aside-info-item{
+    margin-bottom: 64px;
+    background-color: #B8CCE6;
+  }
+
+  .aside-info-item:last-child{
+    margin-bottom: 32px;
+  }
+}
+
 
 /* COURSES SPOTLIGHT */
 #courses{
@@ -330,6 +362,24 @@ nav a:HOVER{
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 900px){
+  #courses{
+    padding: 32px 16px;
+  }
+
+  .courses-grid{
+    flex-direction: column;
+  }
+
+  .course-item{
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .course-item-text{
+    padding: 16px 0 24px 16px;
+  }
+}
 
 /* THESIS */
 #thesis{
